@@ -4,6 +4,7 @@ import Input from "../components/Input";
 import { validateEmpty, validateSpaces } from "../utils/validations";
 import { useFetchGet, useFetchPost } from "../hooks/useFetch";
 import { Link, useNavigate } from "react-router-dom";
+import "../styles/signup.css"
 
 const Signup = () => {
   const url = "http://localhost:3000/api/task";
@@ -79,14 +80,25 @@ const Signup = () => {
         <p>Cargando...</p>
       ) : (
         <>
-          <Form handleSubmit={signup}>
-            <Input ref={userRef} type="text" placeholder="User" />
-            <Input ref={passRef} type="password" placeholder="Password" />
-            <Input ref={confirmRef} type="password" placeholder="Password" />
-            <Input type={"submit"} value={"Registrarse"} />
-          </Form>
-          <Link to={"/login"}>Iniciar Sesión</Link>
-          <p>{msg}</p>
+       
+              <Link to={"/login"}>Iniciar Sesión</Link>
+              <p>{msg}</p>
+     
+              <Form handleSubmit={signup}>
+         
+
+                    <Input className="input" ref={userRef} type="text" placeholder="User" />
+          
+                    <Input ref={passRef} type="password" placeholder="Password" />
+
+                    <Input ref={confirmRef} type="password" placeholder="Password" />
+
+             
+                    <Input type={"submit"} value={"Registrarse"} />
+                 
+               
+              </Form>
+          
         </>
       )}
     </>

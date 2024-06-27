@@ -5,6 +5,10 @@ import Form from "../components/Form";
 import Input from "../components/Input";
 import Task from "../components/Task";
 import { v4 as uuidv4 } from 'uuid';
+////////////////////////////////////////////////////////////////NAVBAR-COMPONENT
+// import ColorSchemesExample from "./components/ColorSchemeExample";
+import ColorSchemesExample from "../components/ColorSchemeExample";
+
 
 export const TodoContext = createContext();
 
@@ -64,6 +68,9 @@ const Home = () => {
   };
 
   return (
+
+
+
     <TodoContext.Provider
       value={{
         currentUser,
@@ -78,15 +85,30 @@ const Home = () => {
         <p>Cargando...</p>
       ) : (
         <>
+
+
+          <ColorSchemesExample />
+
+
           <p>{counter}</p>
+
+
           <Form handleSubmit={createTask}>
             <Input ref={inputRef} type={"text"} placeholder={"Tarea"} />
             <Input type={"submit"} value={"Agregar Tarea"} />
           </Form>
-          <p>{msg}</p>
-          {tasks.map((task) => (
-            <Task key={task.id} currentTask={task} />
-          ))}
+
+
+          <div>
+            <p>{msg}</p>
+            {tasks.map((task) => (
+              <Task key={task.id} currentTask={task} />
+            )
+            )}
+
+
+          </div>
+
         </>
       )}
     </TodoContext.Provider>
@@ -94,3 +116,4 @@ const Home = () => {
 };
 
 export default Home;
+

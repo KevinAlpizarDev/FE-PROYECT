@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+
+  height: 500px;
+  max-width: 97%;
+  /* width: 97%; */
+  grid-template-columns: auto  auto;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.link {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  margin: 20px;
+  background-color: aqua;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  /* width: 100%; */
+  max-width: 100%;
+}

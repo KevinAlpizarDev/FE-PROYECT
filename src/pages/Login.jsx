@@ -5,6 +5,7 @@ import { useFetchGet } from "../hooks/useFetch";
 import { AuthContext } from "../contexts/AuthProvider";
 import Form from "../components/Form";
 import Input from "../components/Input";
+import "../styles/login.css"
 
 const Login = () => {
   const url = "http://localhost:3000/api/task";
@@ -46,16 +47,33 @@ const Login = () => {
         <p>Cargando...</p>
       ) : (
         <>
-          <Form handleSubmit={loginUser}>
-            <Input ref={userRef} type="text" placeholder="User" />
-            <Input ref={passRef} type="password" placeholder="Password" />
-            <Input
-              type={"submit"}
-              value={"Iniciar sesión"}
-            />
-          </Form>
-          <Link to={"/signup"}>Registrarse</Link>
-          <p>{msg}</p>
+    
+
+            <Link to={"/signup"}>Registrarse</Link>
+            <p>{msg}</p>
+
+<Form handleSubmit={loginUser}>
+
+
+<Input ref={userRef} type="text" placeholder="User" />
+
+
+<Input ref={passRef} type="password" placeholder="Password" />
+
+<Input
+  type={"submit"}
+  value={"Iniciar sesión"}
+/>
+
+
+
+</Form>
+
+     
+
+
+
+
         </>
       )}
     </>
