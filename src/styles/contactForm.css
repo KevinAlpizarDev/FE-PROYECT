@@ -1,0 +1,26 @@
+.contact-form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  background-color: aqua;
+  
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 176, 46);
+
+  height: 100%;
+  width: 90%;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 182, 182);
+  height: 100%;
+  width: 90%;
+}

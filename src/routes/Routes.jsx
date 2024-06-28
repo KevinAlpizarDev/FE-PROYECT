@@ -4,12 +4,21 @@ import PrivateRoutes from "./PrivateRoutes";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Home from "../pages/Home";
+import About from "../pages/About";
+import Products from "../pages/Products";
+import Contact from "../pages/Contact";
 
 const router = createBrowserRouter([
+  // PAGINAS PRINCIPALES
   { path: "/", element: <Login /> },
   { path: "/login", element: <Login /> },
   { path: "/signup", element: <Signup /> },
   { path: "/home", element: <PrivateRoutes route={<Home />} /> },
+  // PAGINAS DEL NAVBAR
+  { path: "/products", element: <PrivateRoutes route={<Products />} /> },
+  { path: "/about", element: <PrivateRoutes route={<About />} /> },
+  { path: "/contact", element: <PrivateRoutes route={<Contact />} /> },
+ 
   { path: "/*", element: <h1>404 Not Found</h1> },
 ]);
 

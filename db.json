@@ -1,4 +1,11 @@
 {
-
-    
+  "users": [
+    {
+      "id": "78d6",
+      "username": "R",
+      "password": "R"
+    }
+  ],
+  "products":[]
 }
+

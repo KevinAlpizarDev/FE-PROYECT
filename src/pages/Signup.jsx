@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "../styles/signup.css"
 
 const Signup = () => {
-  const url = "http://localhost:3000/api/task";
+  const url = "http://localhost:3001/users";
   // refs
   const userRef = useRef();
   const passRef = useRef();
@@ -80,25 +80,25 @@ const Signup = () => {
         <p>Cargando...</p>
       ) : (
         <>
-       
-              <Link to={"/login"}>Iniciar Sesión</Link>
-              <p>{msg}</p>
-     
-              <Form handleSubmit={signup}>
-         
 
-                    <Input className="input" ref={userRef} type="text" placeholder="User" />
-          
-                    <Input ref={passRef} type="password" placeholder="Password" />
+          <Link to={"/login"}>Iniciar Sesión</Link>
+          <p>{msg}</p>
 
-                    <Input ref={confirmRef} type="password" placeholder="Password" />
+          <Form handleSubmit={signup}>
 
-             
-                    <Input type={"submit"} value={"Registrarse"} />
-                 
-               
-              </Form>
-          
+
+            <Input className="input" ref={userRef} type="text" placeholder="User" />
+
+            <Input ref={passRef} type="password" placeholder="Password" />
+
+            <Input ref={confirmRef} type="password" placeholder="Password" />
+
+
+            <Input type={"submit"} value={"Registrarse"} />
+
+
+          </Form>
+
         </>
       )}
     </>
