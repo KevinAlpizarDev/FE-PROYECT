@@ -85,6 +85,7 @@ import { AuthContext } from "../contexts/AuthProvider";
 import Form from "../components/Form";
 import Input from "../components/Input";
 import "../styles/login.css"
+import Header from "../components/login/Header";
 ///////////////////////////////////////////////////////////
 // import Button from 'react-bootstrap/Button';
 // import Form from 'react-bootstrap/Form';
@@ -125,7 +126,7 @@ const Login = () => {
   };
   return (
     <div className="text-2xl">
-
+      <Header />
 
       {isLoading ? (
         <p>Cargando...</p>
@@ -136,7 +137,7 @@ const Login = () => {
           <Link to={"/signup"}>Registrarse</Link>
           <p>{msg}</p>
 
-          <Form handleSubmit={loginUser}>
+          <Form handleSubmit={loginUser} className="space-y-5 bg-current shadow p-10 rounded-lg">
 
 
             <Input ref={userRef} type="text" placeholder="User" />
