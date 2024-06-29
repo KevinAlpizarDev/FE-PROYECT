@@ -1,18 +1,11 @@
-import ColorSchemesExample from "../components/ColorSchemeExample"
-
-import BannerContactUs from "../components/contactUs/BannerContactUs"
-
-import ContactForm from "../components/contactUs/ContactForm"
+import React from 'react'
 
 const Contact = () => {
-    return (
-        <div>
-            <ColorSchemesExample />
-            <BannerContactUs />
-            <ContactForm />
-
-        </div>
-    )
+  return (
+    <div>
+      <h1>f</h1>
+    </div>
+  )
 }
 
 export default Contact

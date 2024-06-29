@@ -5,7 +5,7 @@ import Routes from "./routes/Routes";
 // import BasicExample from "./components/BasicExample";
 // import ColorSchemesExample from "./components/ColorSchemeExample";
 // import BasicCard from "./components/BasicCard";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 function App() {
 
   return (
@@ -16,7 +16,7 @@ function App() {
       {/* <Grid/> */}
       {/* <ColorSchemesExample /> */}
       {/* <BasicCard /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
 
   )
