@@ -124,7 +124,9 @@ const Login = () => {
     } else setMsg("Por favor llene los campos");
   };
   return (
-    <>
+    <div className="text-2xl">
+
+
       {isLoading ? (
         <p>Cargando...</p>
       ) : (
@@ -150,7 +152,7 @@ const Login = () => {
           </Form>
         </>
       )}
-    </>
+    </div>
 
 
 

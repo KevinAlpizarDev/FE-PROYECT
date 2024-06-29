@@ -75,7 +75,8 @@ const Signup = () => {
   };
 
   return (
-    <>
+<div className="text-2xl">
+  
       {getIsLoading || postIsLoading ? (
         <p>Cargando...</p>
       ) : (
@@ -101,7 +102,8 @@ const Signup = () => {
 
         </>
       )}
-    </>
+   </div>
+
   );
 };
 
