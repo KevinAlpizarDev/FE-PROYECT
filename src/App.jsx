@@ -6,12 +6,14 @@ import Routes from "./routes/Routes";
 // import ColorSchemesExample from "./components/ColorSchemeExample";
 // import BasicCard from "./components/BasicCard";
 // import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 function App() {
 
   return (
 
     <>
       <Routes />
+      {/* <NavBar/> */}
       {/* <BasicExample/> */}
       {/* <Grid/> */}
       {/* <ColorSchemesExample /> */}

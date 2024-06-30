@@ -1,9 +1,14 @@
+import NavBar from "../components/NavBar"
 
 const About = () => {
     return (
+        <>
+        
+        <NavBar/>
         <div className="text-6xl">
-
-        </div>
+        About
+      </div>
+        </>
     )
 }
 

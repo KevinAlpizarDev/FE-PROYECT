@@ -1,10 +1,17 @@
-import React from 'react'
-
+import Brand from "../components/Brand"
+import NavBar from "../components/NavBar"
 const Contact = () => {
   return (
-    <div className="text-6xl">
-      <h1>f</h1>
-    </div>
+<>
+
+      <NavBar/>
+<Brand/>
+      {/* <div className="text-6xl">
+        Contact Us
+      </div> */}
+
+</>
+
   )
 }
 
