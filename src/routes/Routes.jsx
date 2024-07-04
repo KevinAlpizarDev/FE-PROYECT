@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AuthProvider from "../contexts/AuthProvider";
 import PrivateRoutes from "./PrivateRoutes";
 import Login from "../pages/Login";
-import Signup from "../pages/Signup";
+import Signup from "../pages/Signup.1";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Products from "../pages/Products";
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   { path: "/products", element: <PrivateRoutes route={<Products />} /> },
   { path: "/about", element: <PrivateRoutes route={<About />} /> },
   { path: "/contact", element: <PrivateRoutes route={<Contact />} /> },
- 
+
   { path: "/*", element: <h1>404 Not Found</h1> },
 ]);
 
