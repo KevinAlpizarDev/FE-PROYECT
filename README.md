@@ -184,3 +184,26 @@ const Login = () => {
 };
 
 export default Login;
+
+
+
+
+
+
+
+
+SOMBRA LOGIN
+
+relative -mb-px h-px w-full bg-gradient-to-r from-transparent via-sky-300 to-transparent
+
+
+
+
+ChatGPT
+Para el título y otras partes del texto "About" de tu página de venta de productos tecnológicos de Intel, IBM, Tesla y Nvidia, podrías considerar lo siguiente:
+
+Título:
+"Empowering Innovation: Leaders in Technology and AI Integration"
+
+Sobre Nosotros (About Us):
+"Welcome to [Nombre de tu empresa], where cutting-edge technology meets visionary innovation. We are dedicated to providing top-tier products from industry giants such as Intel, IBM, Tesla, and Nvidia, ensuring our customers access to the latest advancements in AI integration and beyond. Our commitment to excellence drives us to deliver unparalleled service and support, empowering our clients to thrive in the ever-evolving landscape of technology."

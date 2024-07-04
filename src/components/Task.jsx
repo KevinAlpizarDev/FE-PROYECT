@@ -52,6 +52,7 @@ const Task = ({ currentTask }) => {
     <div className="task">
       <Input ref={checkboxRef} type={"checkbox"} handleClick={completeTask} />
       <p>{currentTask.title}</p>
+      {/* <p>Hola</p> */}
       <Button type={"text"} text={"Eliminar"} handleClick={deleteTask} />
     </div>
   );
