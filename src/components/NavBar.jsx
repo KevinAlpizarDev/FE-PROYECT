@@ -216,6 +216,9 @@ import React, { useState, useEffect } from 'react';
 // import Clock from './components//Clock';
 import Clock from './Clock';
 import { Link } from 'react-router-dom';
+// /////////////////////////////////////////////////////////////////
+import PageLogo from "../assets/micromicro.png"
+
 
 const NavBar = () => {
   const [percent, setPercent] = useState(0);
@@ -238,21 +241,22 @@ const NavBar = () => {
 
   return (
     // <nav className="flex justify-around py-6 bg-black shadow-md ">
-    <nav className={`flex justify-around py-6 bg-black  shadow-md sticky top-0`}>
+    <nav className={`flex justify-around py-4 bg-black text  shadow-md sticky top-0`}>
       {/* ${isDarkMode ? 'bg-gray-400': 'bg-black'} */}
       <div className="flex items-center">
         <a href="#" className="cursor-pointer">
           <h3 className="text-2xl font-medium text-blue-500">
-            <img
+            {/* <img
               className="h-10 object-cover"
               src="https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.svg"
               alt="Store Logo"
-            />
+            /> */}
+            <img src={PageLogo} alt="" />
           </h3>
         </a>
       </div>
 
-      <div className="items-center hidden space-x-8 lg:flex">
+      <div className="items-center hidden space-x-8 lg:flex  text-white font-mono">
         <Link
           to="/products"
           className="flex text-white font-bold text-xl"
@@ -266,9 +270,9 @@ const NavBar = () => {
 
         <Link
           to="/about"
-          className="flex text-white font-bold text-xl"
+          className="flex text-white font-bold text-xl  font-mono"
         >
-          <p>About Us</p>
+          <p className=' text-white font-mono'>About Us</p>
         </Link>
 
         <Link
@@ -297,7 +301,7 @@ const NavBar = () => {
         </a>
 
         {/* ///////////////////////// */}
-        <a className="flex text-gray-600 cursor-pointer transition-colors duration-300 font-semibold text-blue-600 border-b-2 border-white">
+        <a className="flex text-gray-600 cursor-pointer transition-colors duration-300 font-semibold text-blue-600 border-b-2 border-white font-mono">
           <svg
             className="fill-current h-5 w-5 mr-2 mt-0.5"
             xmlns="http://www.w3.org/2000/svg"
@@ -309,10 +313,19 @@ const NavBar = () => {
           >
             <path d="M10,17V14H3V10H10V7L15,12L10,17M10,2H19A2,2 0 0,1 21,4V20A2,2 0 0,1 19,22H10A2,2 0 0,1 8,20V18H10V20H19V4H10V6H8V4A2,2 0 0,1 10,2Z" />
           </svg>
-          Login
+
+          <Link
+            to="/login"
+            className="flex text-white font-bold text-xl"
+          >
+            <p>Login</p>
+          </Link>
         </a>
+
+
+
         {/* ///////////////////////// */}
-        <a className="flex text-gray-600 cursor-pointer transition-colors duration-300 font-semibold text-blue-600 border-b-2 border-white">
+        <a className="flex text-gray-600 cursor-pointer transition-colors duration-300 font-semibold text-blue-600 border-b-2 border-white font-font-mono">
           <svg
             className="fill-current h-5 w-5 mr-2 mt-0.5"
             xmlns="http://www.w3.org/2000/svg"
@@ -324,7 +337,14 @@ const NavBar = () => {
           >
             <path d="M10,17V14H3V10H10V7L15,12L10,17M10,2H19A2,2 0 0,1 21,4V20A2,2 0 0,1 19,22H10A2,2 0 0,1 8,20V18H10V20H19V4H10V6H8V4A2,2 0 0,1 10,2Z" />
           </svg>
-          Login
+
+
+          <Link
+            to="/signup"
+            className="flex text-white font-bold text-xl"
+          >
+            <p>Signup</p>
+          </Link>
         </a>
       </div>
 

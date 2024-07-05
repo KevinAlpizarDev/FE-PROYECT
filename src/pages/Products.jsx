@@ -11,7 +11,7 @@ const Products = () => {
       <NavBar />
       {/* <Content /> */}
       <h1>Products</h1>
-      <Footer />
+      {/* <Footer /> */}
       {/* <div className="text-6xl flex  justify-center  px-4 py-11  bg-[#080808] h-screen">
         Products
       </div> */}

@@ -10,7 +10,9 @@ const Brand = () => {
     const toIntel = "https://www.intel.com/content/www/us/en/products/overview.html"
     return (
         <div>
-            <div class='flex  justify-center  px-4 py-11  bg-[#080808]'>
+            {/* <div class='flex  justify-center  px-4 py-11  bg-[#080808]'> */}
+            <div class='flex  justify-center  px-4 pb-12 bg-[#080808]'>
+         
                 <div>
                     <div class="group relative -ml-2 flex scroll-mt-20 items-center pl-9">
                         {/* <a href="#" class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100  ">
@@ -22,9 +24,9 @@ const Brand = () => {
                     Welcome to  MicroTech, where cutting-edge technology meets visionary innovation. We are dedicated to providing top-tier products from industry giants such as Intel, IBM, Tesla, and Nvidia, ensuring our customers access to the latest advancements in AI integration and beyond. Our commitment to excellence drives us to deliver unparalleled service and support, empowering our clients to thrive in the ever-evolving landscape of technology.
                     </h4> */}
 
-<div class="font-poppins font-black text text-white uppercase py-10 px-10">
+{/* <div class="font-poppins font-black text text-white uppercase py-10 px-10">
  
-</div>
+</div> */}
 
 
                         {/* <h2 class="block antialiased tracking-normal font-sans text-6xl font-bold leading-snug !mb-16  text-white "> of artificial intelligence.</h2> */}

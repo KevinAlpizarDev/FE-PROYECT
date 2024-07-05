@@ -110,7 +110,8 @@ import React, { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFetchGet, useFetchPost } from "../hooks/useFetch"; // Asumiendo que tienes un hook personalizado para manejar fetches
 import { validateEmpty, validateSpaces } from "../utils/validations"; // Asumiendo que tienes funciones de validación personalizadas
-
+// ///////////////////////////////////////////////////////////////////////
+import PageLogo from "../assets/micromicro.png"
 const Signup = () => {
   const url = "http://localhost:3001/users"; // URL del backend para registrar usuarios
   const userRef = useRef();
@@ -186,7 +187,7 @@ const Signup = () => {
     <div className="bg-black text-white min-h-screen flex flex-col items-center pt-16 sm:justify-center sm:pt-0">
       <a href="#">
         <div className="text-foreground font-semibold text-2xl tracking-tighter mx-auto flex items-center gap-2">
-          <div>
+          {/* <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -202,7 +203,8 @@ const Signup = () => {
               />
             </svg>
           </div>
-          Ardiansyah Putra
+          Ardiansyah Putra */}
+          <img src={PageLogo} alt="" />
         </div>
       </a>
       <div className="relative mt-12 w-full max-w-lg sm:mt-10">
@@ -216,21 +218,41 @@ const Signup = () => {
           </div>
           <div className="p-6 pt-0">
             <form onSubmit={signup}>
-              <div className="mt-4">
+           
+
+{/* <div className="mt-4">
                 <div className="group relative rounded-lg border focus-within:border-sky-200 px-3 pb-1.5 pt-2.5 duration-200 focus-within:ring focus-within:ring-sky-300/30">
                   <div className="flex justify-between">
                     <label className="text-xs font-medium text-muted-foreground group-focus-within:text-white text-gray-400">
                       Username
                     </label>
                   </div>
-                  <input
+             
+                            <input
                     ref={userRef}
                     type="text"
                     placeholder="Username"
                     className="block w-full border-0 bg-transparent p-0 text-sm my-1 rounded-full border-0 bg-accent px-4 py-2 font-medium placeholder:text-muted-foreground/90 focus:outline-none focus:ring-0 sm:leading-7 text-foreground"
                   />
                 </div>
+              </div> */}
+
+<div className="mt-4">
+                <div className="group relative rounded-lg border focus-within:border-sky-200 px-3 pb-1.5 pt-2.5 duration-200 focus-within:ring focus-within:ring-sky-300/30">
+                  <div className="flex justify-between">
+                    <label className="text-xs font-medium text-muted-foreground group-focus-within:text-white text-gray-400">
+                     Username
+                    </label>
+                  </div>
+                  <input
+                    ref={userRef}
+                    type="text"
+                    placeholder="user Name"
+                    className="block w-full border-0 bg-transparent p-0 text-sm my-1 placeholder:text-muted-foreground/90 focus:outline-none focus:ring-0 focus:ring-teal-500 sm:leading-7 text-foreground"
+                  />
+                </div>
               </div>
+              {/* ///////////////////////////// */}
               <div className="mt-4">
                 <div className="group relative rounded-lg border focus-within:border-sky-200 px-3 pb-1.5 pt-2.5 duration-200 focus-within:ring focus-within:ring-sky-300/30">
                   <div className="flex justify-between">
@@ -261,15 +283,38 @@ const Signup = () => {
                   />
                 </div>
               </div>
-              <div className="mt-4 flex items-center justify-end gap-x-2">
+              {/* <div className="mt-4 flex items-center justify-end gap-x-2">
                 <button
                   type="submit"
                   className="font-semibold hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300 inline-flex items-center justify-center rounded-md text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black h-10 px-4 py-2"
                 >
                   Register
                 </button>
-              </div>
+              </div> */}
+
             </form>
+<div className="mt-4 flex items-center justify-end gap-x-2">
+                    {/* <button
+                      className="font-semibold hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300 inline-flex items-center justify-center rounded-md text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black h-10 px-4 py-2"
+                      type="submit"
+                    >
+                     Register
+                    </button> */}
+                          <button
+                  type="submit"
+                  className="font-semibold hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300 inline-flex items-center justify-center rounded-md text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black h-10 px-4 py-2"
+                >
+                  Register
+                </button>
+                    <Link
+                      to="/"
+                      className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:ring hover:ring-white h-10 px-4 py-2 duration-200"
+                    >
+                     Login
+                    </Link>
+                  </div>
+
+                  
           </div>
           <div className="flex items-center justify-center mt-4">
             <p className="text-sm font-medium text-foreground">

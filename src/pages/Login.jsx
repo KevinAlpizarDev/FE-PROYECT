@@ -96,6 +96,11 @@ import Form from "../components/Form";
 import Input from "../components/Input";
 import "../styles/login.css";
 
+// ////////////////////////////////
+// import LogoPage from "../assets/svg/logo.svg"
+// import pageLogo from "../assets/MICROWORLD.png"
+import pageLogo from "../assets/micromicro.png"
+
 const Login = () => {
   const url = "http://localhost:3001/users";
   const userRef = useRef();
@@ -123,7 +128,7 @@ const Login = () => {
               localStorage.setItem("id", user.id);
               setTimeout(() => {
                 login();
-                navigate("/home");
+                navigate("/products");
               }, 1000);
             } else {
               setMsg("Usuario y contraseña no coinciden");
@@ -143,11 +148,11 @@ const Login = () => {
   };
 
   return (
-    <div className=" bg-[#080808] text-white flex min-h-screen flex-col items-center pt-16 sm:justify-center sm:pt-0">
+    <div className=" bg-black text-white flex min-h-screen flex-col items-center pt-16 sm:justify-center sm:pt-0">
       <a href="#">
         <div className="text-foreground font-semibold text-2xl tracking-tighter mx-auto flex items-center gap-2">
           <div>
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -160,9 +165,11 @@ const Login = () => {
                 strokeLinejoin="round"
                 d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5"
               />
-            </svg>
+            </svg> */}
+            {/* <img src={LogoPage} alt="" /> */}
+            <img src={pageLogo} alt="" />
           </div>
-          Ardiansyah Putra
+
         </div>
       </a>
       <div className="relative mt-12 w-full max-w-lg sm:mt-10">

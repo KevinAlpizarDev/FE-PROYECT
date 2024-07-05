@@ -15,7 +15,7 @@ const About = () => {
       {/* <Content/> */}
       {/* <ContentPage/> */}
       <ContentAbout/>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   )
 }

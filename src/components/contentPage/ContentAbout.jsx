@@ -18,7 +18,9 @@ const ContentAbout = () => {
     return (
         <div>
 
+            {/* <div class="min-h-28 bg-[#080808]"> */}
             <div class="min-h-28 bg-[#080808]">
+
                 <div class="mx-auto py-4">
                     {/* <h2 class="font-black text-9xl text-white uppercase">
                         About Page
@@ -27,24 +29,24 @@ const ContentAbout = () => {
                     {/* <div className='max-h-28 max-w-60 mx' >
                     </div> */}
                     {/* <img src={NvidiaGif} alt="" /> */}
-                    <h2 class="font-black text-5xl text-white uppercase py-10 ml-7">
+                    <h1 class="font-bold text-6xl  bg-gradient-to-br from-white via-white/50 to-transparent bg-clip-text text-transparent p-6">
                         Empowering Innovation: Leaders in Technology and AI Integration
-                    </h2>
+                    </h1>
 
 
 
 
-                  
+
 
                     <div class="gap-6 mt-8 mx-4 md:flex">
-                        <div class="md:w-1/2">
+                        <div class="md:w-1/2  bg-white/10 rounded-lg p-6">
                             <div class="wrap-video">
                                 {/* <video class="object-cover h-96 w-full bg-black" loop="" >
                                     <source 
                         src="https://assets-global.website-files.com/62d57921074baa1ce7275405/648b6bdb802c1efb403e5be5_ZOOM2-transcode.mp4"
                         type="video/mp4">
                                 </video> */}
-                                <img src={NvidiaGif} alt="" />
+                                <img className='transform cursor-pointer place-items-center   transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50  rounded-lg' src={NvidiaGif} alt="" />
 
                             </div>
                             <span class="pt-4 grid grid-cols-6 gap-4">
@@ -61,14 +63,14 @@ const ContentAbout = () => {
                                 CPU/GPU
                             </span>
                         </div>
-                        <div class="md:w-1/2">
+                        <div class="md:w-1/2 bg-white  bg-white/10 rounded-lg p-6">
                             <div class="wrap-video">
                                 {/* <video class="object-cover h-96 w-full bg-black" loop="" >
                                     <source 
                         src="https://assets-global.website-files.com/62d57921074baa1ce7275405/640fe762f883d05b8f683c6d_HOKABODEGA-transcode.mp4"
                         type="video/mp4"> 
                                 </video> */}
-                                <img src={TeslaGif} alt="" />
+                                <img className='transform cursor-pointer place-items-center   transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50  rounded-lg' src={TeslaGif} alt="" />
                             </div>
                             <span class="pt-4 grid grid-cols-6 gap-4">
                                 <span class="col-start-1 col-end-3 font-bold text-lg text-white font-mono">
@@ -87,22 +89,22 @@ const ContentAbout = () => {
                     </div>
                 </div>
 
-{/* 
+                {/* 
 /////////////////////////////////////// */}
-<h2 class="font-poppins font-black text-white uppercase py-10 p-xl-5">
+                {/* <h2 class="font-poppins font-black text-white uppercase py-10 p-xl-5">
   Welcome to [Nombre de tu empresa], where cutting-edge technology meets visionary innovation. We are dedicated to providing top-tier products from industry giants such as Intel, IBM, Tesla, and Nvidia, ensuring our customers access to the latest advancements in AI integration and beyond. Our commitment to excellence drives us to deliver unparalleled service and support, empowering our clients to thrive in the ever-evolving landscape of technology.
-</h2>
+</h2> */}
                 <div class="gap-6 mt-8 mx-4 md:flex">
 
 
-                    <div class="md:w-1/2">
+                    <div class="md:w-1/2  bg-white   bg-white/10 rounded-lg p-6">
                         <div class="wrap-video">
                             {/* <video class="object-cover h-96 w-full bg-black" loop="" >
                                  <source 
                     src="https://assets-global.website-files.com/62d57921074baa1ce7275405/63c084f55da78823643adbc3_ThePerfectPants-transcode.mp4"
                     type="video/mp4"> 
                             </video> */}
-                            <img src={IntelGif} alt="" />
+                            <img className='transform cursor-pointer place-items-center   transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50  rounded-lg' src={IntelGif} alt="" />
                         </div>
                         <span class="pt-4 grid grid-cols-6 gap-4">
                             <span class="col-start-1 col-end-3 font-bold text-lg text-white  font-mono">
@@ -119,14 +121,14 @@ const ContentAbout = () => {
                         </span>
                     </div>
                     {/* ///////////////////////////////////// */}
-                    <div class="md:w-1/2">
-                        <div class="wrap-video">
+                    <div class="md:w-1/2  bg-white   bg-white/10 rounded-lg p-6 ">
+                        <div class="wrap-video rounded-lg ">
                             {/* <video class="object-cover h-96 w-full bg-black" loop="" >
                                  <source 
                     src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
                     type="video/mp4"> 
                             </video> */}
-                            <img src={IbmGif} alt="" />
+                            <img className='transform cursor-pointer place-items-center   transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50  rounded-lg' src={IbmGif} alt="" />
                         </div>
                         <span class="pt-4 grid grid-cols-6 gap-4">
                             <span class="col-start-1 col-end-3 font-bold text-lg text-white font-mono">
@@ -147,9 +149,17 @@ const ContentAbout = () => {
                 </div>
 
 
-                <h2 class="font-poppins font-black text-white uppercase py-10 p-xl-5">
+                <h2 class="  uppercase py-24 px-32 font-bold text-lg  bg-gradient-to-br from-white via-white/50 to-transparent bg-clip-text text-transparent">
+                    Welcome to MicroWorld, where cutting-edge technology meets visionary innovation. We are dedicated to providing top-tier products from industry giants such as Intel, IBM, Tesla, and Nvidia, ensuring our customers access to the latest advancements in AI integration and beyond.
+                </h2>
+
+                {/* <p className='gx lk uc avr awf awx axy'>
+                    Welcome to [Nombre de tu empresa], where cutting-edge technology meets visionary innovation. We are dedicated to providing top-tier products from industry giants such as Intel, IBM, Tesla, and Nvidia, ensuring our customers access to the latest advancements in AI integration and beyond.
+                </p> */}
+
+                {/* <h2 class="font-poppins font-black text-white uppercase py-10 p-xl-5">
   Welcome to [Nombre de tu empresa], where cutting-edge technology meets visionary innovation. We are dedicated to providing top-tier products from industry giants such as Intel, IBM, Tesla, and Nvidia, ensuring our customers access to the latest advancements in AI integration and beyond. Our commitment to excellence drives us to deliver unparalleled service and support, empowering our clients to thrive in the ever-evolving landscape of technology.
-</h2>
+</h2> */}
                 {/* <h2 class="font-black text-7xl text-white text-center uppercase my-16 hover:bg-white hover:text-black hover:rounded-full hover:px-6">
                     view select work
                 </h2> */}

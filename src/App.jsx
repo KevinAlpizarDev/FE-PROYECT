@@ -9,6 +9,7 @@ import Routes from "./routes/Routes";
 import NavBar from "./components/NavBar";
 
 function App() {
+  
 
   return (
 
