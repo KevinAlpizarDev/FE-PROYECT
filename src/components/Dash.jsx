@@ -10,7 +10,7 @@ const Dash = () => {
 
                     <div id="content" class="bg-white/10 col-span-full w-full rounded-lg p-6 ">
                         <div id="24h">
-                            <h1 class="font-bold py-4 uppercase">Last 24h Statistics</h1>
+                            <h1 class="font-bold py-4 uppercase">Headquarters</h1>
                             <div id="stats" class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 <div class="bg-[#080808]  to-white/5 p-6 rounded-lg">
                                     <div class="flex flex-row space-x-4 items-center">
@@ -20,9 +20,11 @@ const Dash = () => {
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="text-indigo-300 text-sm font-medium uppercase leading-4">Users</p>
+                                            <p class="text-indigo-300 text-sm font-medium uppercase leading-4">
+                                            Satisfied Users
+                                            </p>
                                             <p class="text-white font-bold text-2xl inline-flex items-center space-x-2">
-                                                <span>+28</span>
+                                                <span>+672</span>
                                                 <span>
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
@@ -42,7 +44,8 @@ const Dash = () => {
 
                                         </div>
                                         <div>
-                                            <p class="text-teal-300 text-sm font-medium uppercase leading-4">Income</p>
+                                            <p class="text-teal-300 text-sm font-medium uppercase leading-4">
+                                            Profits</p>
                                             <p class="text-white font-bold text-2xl inline-flex items-center space-x-2">
                                                 <span>$2,873.88</span>
                                                 <span>
@@ -64,9 +67,10 @@ const Dash = () => {
 
                                         </div>
                                         <div>
-                                            <p class="text-blue-300 text-sm font-medium uppercase leading-4">Invoices</p>
+                                            <p class="text-blue-300 text-sm font-medium uppercase leading-4">
+                                            Successful sales</p>
                                             <p class="text-white font-bold text-2xl inline-flex items-center space-x-2">
-                                                <span>+79</span>
+                                                <span>+675</span>
                                                 <span>
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
@@ -136,7 +140,7 @@ const Dash = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* <div class="bg-[#080808]  to-white/5 rounded-lg">
+                                <div class="bg-[#080808]  to-white/5 rounded-lg">
                                     <div class="flex flex-row items-center">
                                         <div class="text-3xl p-4">💰</div>
                                         <div class="p-2">
@@ -171,7 +175,7 @@ const Dash = () => {
                                             <span>Info</span>
                                         </a>
                                     </div>
-                                </div> */}
+                                </div>
                                 <div class="bg-[#080808]  to-white/5 rounded-lg">
                                     <div class="flex flex-row items-center">
                                         <div class="text-3xl p-4">💰</div>
@@ -193,26 +197,28 @@ const Dash = () => {
                             </div>
                         </div>
                         <div id="last-users">
-                            <h1 class="font-bold py-4 uppercase">Last 24h users</h1>
+                            <h1 class="font-bold py-4 uppercase">
+                            headquarters</h1>
                             <div class="overflow-x-scroll">
                                 <table class="w-full whitespace-nowrap">
                                     <thead class="bg-black/60">
-                                        <th class="text-left py-3 px-2 rounded-l-lg">Name</th>
-                                        <th class="text-left py-3 px-2">Email</th>
-                                        <th class="text-left py-3 px-2">Group</th>
-                                        <th class="text-left py-3 px-2">Status</th>
+                                        <th class="text-left py-3 px-2 rounded-l-lg">
+                                        Provinces</th>
+                                        <th class="text-left py-3 px-2">Place</th>
+                                        <th class="text-left py-3 px-2">Phone</th>
+                                        <th class="text-left py-3 px-2">CO</th>
                                         <th class="text-left py-3 px-2 rounded-r-lg">Actions</th>
                                     </thead>
                                     <tr class="border-b border-gray-700">
                                         <td class="py-3 px-2 font-bold">
                                             <div class="inline-flex space-x-3 items-center">
                                                 {/* <span><img class="rounded-full w-8 h-8" src="https://images.generated.photos/tGiLEDiAbS6NdHAXAjCfpKoW05x2nq70NGmxjxzT5aU/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTM4ODM1LmpwZw.jpg" alt=""></span> */}
-                                                <span>Thai Mei</span>
+                                                <span>Puntarenas</span>
                                             </div>
                                         </td>
-                                        <td class="py-3 px-2">thai.mei@abc.com</td>
-                                        <td class="py-3 px-2">User</td>
-                                        <td class="py-3 px-2">Approved</td>
+                                        <td class="py-3 px-2">Puntarenas City</td>
+                                        <td class="py-3 px-2">11111</td>
+                                        <td class="py-3 px-2">DirectorKevin</td>
                                         <td class="py-3 px-2">
                                             <div class="inline-flex items-center space-x-3">
                                                 <a href="" title="Edit" class="hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -234,12 +240,12 @@ const Dash = () => {
                                         <td class="py-3 px-2 font-bold">
                                             <div class="inline-flex space-x-3 items-center">
                                                 {/* <span><img class="rounded-full w-8 h-8" src="https://images.generated.photos/tGiLEDiAbS6NdHAXAjCfpKoW05x2nq70NGmxjxzT5aU/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTM4ODM1LmpwZw.jpg" alt=""></span> */}
-                                                <span>Thai Mei</span>
+                                                <span>San José</span>
                                             </div>
                                         </td>
-                                        <td class="py-3 px-2">thai.mei@abc.com</td>
-                                        <td class="py-3 px-2">User</td>
-                                        <td class="py-3 px-2">Approved</td>
+                                        <td class="py-3 px-2">Santa Ana</td>
+                                        <td class="py-3 px-2">2222</td>
+                                        <td class="py-3 px-2">Barry</td>
                                         <td class="py-3 px-2">
                                             <div class="inline-flex items-center space-x-3">
                                                 <a href="" title="Edit" class="hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -261,12 +267,12 @@ const Dash = () => {
                                         <td class="py-3 px-2 font-bold">
                                             <div class="inline-flex space-x-3 items-center">
                                                 {/* <span><img class="rounded-full w-8 h-8" src="https://images.generated.photos/tGiLEDiAbS6NdHAXAjCfpKoW05x2nq70NGmxjxzT5aU/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTM4ODM1LmpwZw.jpg" alt=""></span> */}
-                                                <span>Thai Mei</span>
+                                                <span>Heredia</span>
                                             </div>
                                         </td>
-                                        <td class="py-3 px-2">thai.mei@abc.com</td>
-                                        <td class="py-3 px-2">User</td>
-                                        <td class="py-3 px-2">Approved</td>
+                                        <td class="py-3 px-2">Barva Heredia</td>
+                                        <td class="py-3 px-2">3333</td>
+                                        <td class="py-3 px-2">Keylor</td>
                                         <td class="py-3 px-2">
                                             <div class="inline-flex items-center space-x-3">
                                                 <a href="" title="Edit" class="hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -288,12 +294,12 @@ const Dash = () => {
                                         <td class="py-3 px-2 font-bold">
                                             <div class="inline-flex space-x-3 items-center">
                                                 {/* <span><img class="rounded-full w-8 h-8" src="https://images.generated.photos/niCVbIBAm4hahzwS83HoEtcVEIactkKohOzgXWYY4lM/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTk4ODczLmpwZw.jpg" alt=""></span> */}
-                                                <span>Marquez Spineli</span>
+                                                <span>Cartago</span>
                                             </div>
                                         </td>
                                         <td class="py-3 px-2">marquez.spineli@cba.com</td>
                                         <td class="py-3 px-2">User</td>
-                                        <td class="py-3 px-2">Approved</td>
+                                        <td class="py-3 px-2">Keyloas</td>
                                         <td class="py-3 px-2">
                                             <div class="inline-flex items-center space-x-3">
                                                 <a href="" title="Edit" class="hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -315,10 +321,10 @@ const Dash = () => {
                                         <td class="py-3 px-2 font-bold">
                                             <div class="inline-flex space-x-3 items-center">
                                                 {/* <span><img class="rounded-full w-8 h-8" src="https://images.generated.photos/f_xU7q780YXiKG7IwKVV05eU6Sj2nIodEkN1S8GyM2M/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NDk2MTc4LmpwZw.jpg" alt=""></span> */}
-                                                <span>Mark Spike</span>
+                                                <span>Guanacaste</span>
                                             </div>
                                         </td>
-                                        <td class="py-3 px-2">mark.spike@abc.com</td>
+                                        <td class="py-3 px-2">Liberia</td>
                                         <td class="py-3 px-2">Administrator</td>
                                         <td class="py-3 px-2">Approved</td>
                                         <td class="py-3 px-2">
