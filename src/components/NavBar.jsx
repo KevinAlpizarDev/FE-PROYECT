@@ -64,7 +64,7 @@ const NavBar = () => {
 
   return (
     // <nav className="flex justify-around py-6 bg-black shadow-md ">
-    <nav className={`flex justify-around py-2 bg-white text  shadow-md sticky top-0  z-10 dark:bg-black`}>
+    <nav className={`flex justify-around py-2 bg-white text  shadow-md sticky top-0  z-10 dark:bg-black bg-opacity-95`}>
     
       {/* <Selector/> */}
       <div className="flex items-center">
