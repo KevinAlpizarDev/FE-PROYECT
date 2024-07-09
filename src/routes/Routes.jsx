@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   { path: "/signup", element: <Signup /> },
   { path: "/home", element: <PrivateRoutes route={<Home />} /> },
   // PAGINAS DEL NAVBAR
-  { path: "/products", element: <PrivateRoutes route={<Products />} /> },
+  { path: " /products", element: <PrivateRoutes route={<Products />} /> },
   { path: "/about", element: <PrivateRoutes route={<About />} /> },
   { path: "/contact", element: <PrivateRoutes route={<Contact />} /> },
 
