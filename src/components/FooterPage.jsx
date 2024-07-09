@@ -6,10 +6,10 @@ const FooterPage = () => {
 
 
 
-      <footer class=" bg-white  text-center  text-neutral-600 dark:bg-white/10  dark:text-white">
+      <footer class=" bg-neutral-100 text-center bg-white/10 text-neutral-600  dark:text-neutral-200 dark:bg-black">
 
 
-        <div class="flex items-center justify-center border-t-2-white/10 border p-6 bg-white dark:bg-white/10 lg:justify-between">
+        <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
           <div class="mr-12 hidden md:block">
             <span>Get connected with us:</span>
           </div>
@@ -101,7 +101,7 @@ const FooterPage = () => {
 
           {/* <!-- Text --> */}
           <div class="mb-6">
-            <h5 class="mb-2 font-bold font-poppins uppercase">Explore Our World</h5>
+            <h5 class="mb-2 font-bold uppercase">Explore Our World</h5>
 
             <p class="mb-4">
               Embark on an adventure of a lifetime and uncover hidden
