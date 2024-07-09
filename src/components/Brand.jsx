@@ -11,7 +11,7 @@ const Brand = () => {
     return (
         <div>
             {/* <div class='flex  justify-center  px-4 py-11  bg-[#080808]'> */}
-            <div class='flex  justify-center  px-4 pb-12 bg-[#080808]'>
+            <div class='flex  justify-center  px-4 pb-12  bg-[#fbfbfb] dark:bg-white/10 border-y dark:border-black'>
          
                 <div>
                     <div class="group relative -ml-2 flex scroll-mt-20 items-center pl-9">
@@ -47,7 +47,7 @@ const Brand = () => {
                     {/* <h2 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug !mb-2  text-white ">Frameworks Integrationaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h2> */}
                     <div onClick={toIntel} class="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4" id="frameworks-integration">
 
-                        <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50 bg-white px-3 py-2 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50 hover:bg-white" target='_blank' href="https://www.intel.com/content/www/us/en/products/overview.html">
+                        <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50  bg-white hover:bg-white/10 dark:bg-white/10 dark:hover:bg-white dark:border-gray-600 px-10 py-5 transition-all hover:scale-105 hover:border-blue-gray-100" target='_blank' href="https://www.intel.com/content/www/us/en/products/overview.html">
 
                             <span class="my-6 grid h-24 w-24 place-items-center">
 
@@ -56,21 +56,21 @@ const Brand = () => {
                             </span>
                         </a>
 
-                        <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50  bg-white px-10 py-5 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50  hover:bg-white" target='_blank' href="https://www.nvidia.com/en-us/">
+                        <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50  bg-white hover:bg-white/10 dark:bg-white/10 dark:hover:bg-white dark:border-gray-600 px-10 py-5 transition-all hover:scale-105 hover:border-blue-gray-100" target='_blank' href="https://www.nvidia.com/en-us/">
                             <span class="my-6 grid h-24 w-24 place-items-center">
 
                                 <img src={Nvidia} alt="" />
 
                             </span>
                         </a>
-                        <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border bg-white bg-white px-3 py-2 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50 hover:bg-white" target='_blank' href="https://www.ibm.com/products">
+                        <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50  bg-white hover:bg-white/10 dark:bg-white/10 dark:hover:bg-white dark:border-gray-600 px-10 py-5 transition-all hover:scale-105 hover:border-blue-gray-100" target='_blank' href="https://www.ibm.com/products">
                             <span class="my-6 grid h-24 w-24 place-items-center">
 
                                 <img src={Ibm} alt="" />
 
                             </span>
                         </a>
-                        <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50 bg-white px-3 py-2 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50  hover:bg-white" target='_blank' href="https://shop.tesla.com/category/lifestyle">
+                        <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50  bg-white hover:bg-white/10 dark:bg-white/10 dark:hover:bg-white dark:border-gray-600  px-10 py-5 transition-all hover:scale-105 hover:border-blue-gray-100" target='_blank' href="https://shop.tesla.com/category/lifestyle">
                             <span class="my-6 grid h-24 w-24 place-items-center">
 
                                 <img src={Tesla} alt="" />
