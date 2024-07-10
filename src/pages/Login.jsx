@@ -1,91 +1,3 @@
-// import { useRef, useContext, useState } from "react";
-// import { validateEmpty } from "../utils/validations";
-// import { Link, useNavigate } from "react-router-dom";
-// import { useFetchGet } from "../hooks/useFetch";
-// import { AuthContext } from "../contexts/AuthProvider";
-// import Form from "../components/Form";
-// import Input from "../components/Input";
-// import "../styles/login.css"
-
-// const Login = () => {
-//   const url = "http://localhost:3001/users";
-//   // ref
-//   const userRef = useRef();
-//   const passRef = useRef();
-//   // states
-//   const [msg, setMsg] = useState("");
-//   // context
-//   const { login } = useContext(AuthContext);
-//   // navigate
-//   const navigate = useNavigate();
-//   // custom hook
-//   const { get, isLoading, error } = useFetchGet();
-//   const loginUser = async (e) => {
-//     e.preventDefault();
-//     let userInput = userRef.current.value;
-//     let passInput = passRef.current.value;
-//     if (validateEmpty(userRef.current.value)) {
-//       const data = await get(url);
-//       if (data) {
-//         const user = data.find((user) => user.username === userInput);
-//         if (user) {
-//           if (user.password === passInput) {
-//             setMsg("Inicio de sesión éxitoso!");
-//             localStorage.setItem("id", user.id);
-//             setTimeout(() => {
-//               login();
-//               navigate("/home");
-//             }, 1000);
-//           } else setMsg("Usuario y contraseña no coinciden");
-//         } else setMsg("Nombre de usuario no existe.");
-//       } else setMsg(error);
-//     } else setMsg("Por favor llene los campos");
-//   };
-//   return (
-//     <>
-//       {isLoading ? (
-//         <p>Cargando...</p>
-//       ) : (
-//         <>
-
-
-//           <Link to={"/signup"}>Registrarse</Link>
-//           <p>{msg}</p>
-
-//           <Form handleSubmit={loginUser}>
-
-
-//             <Input ref={userRef} type="text" placeholder="User" />
-
-
-//             <Input ref={passRef} type="password" placeholder="Password" />
-
-//             <Input
-//               type={"submit"}
-//               value={"Iniciar sesión"}
-//             />
-
-//           </Form>
-//         </>
-//       )}
-//     </>
-//   );
-// };
-
-// export default Login;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 import { useRef, useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -96,9 +8,7 @@ import Form from "../components/Form";
 import Input from "../components/Input";
 import "../styles/login.css";
 
-// ////////////////////////////////
-// import LogoPage from "../assets/svg/logo.svg"
-// import pageLogo from "../assets/MICROWORLD.png"
+
 import pageLogo from "../assets/micromicro.png"
 
 const Login = () => {
@@ -152,22 +62,7 @@ const Login = () => {
       <a href="#">
         <div className="text-foreground font-semibold text-2xl tracking-tighter mx-auto flex items-center gap-2">
           <div>
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5"
-              />
-            </svg> */}
-            {/* <img src={LogoPage} alt="" /> */}
-            {/* <img src={pageLogo} alt="" /> */}
+         
             <h1 className="text-4xl">
              <span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-red-500 from- via-red-400 via- to-yellow-300 to-" >
              Mic
@@ -184,19 +79,14 @@ orld
         </div>
       </a>
       <div className="relative mt-12 w-full max-w-lg sm:mt-10">
-        {/* <div className="relative -mb-px h-px w-full bg-gradient-to-r from-transparent via-sky-300 to-transparent"></div> */}
-
-        {/* <div className="relative -mb-px h-px w-full bg-gradient-to-r from-transparent via-sky-300 to-transparent"></div> */}
-
+      
         <div className="relative -mb-px h-px w-full bg-gradient-to-r from-transparent via-sky-300 to-transparent"></div>
 
-        {/* relative -mb-px h-px w-full bg-gradient-to-r from-transparent via-sky-300 to-transparent */}
+       
         <div className="mx-5 border dark:border-b-white/50 dark:border-t-white/50 border-b-white/20 sm:border-t-white/20 shadow-[20px_0_20px_20px] shadow-slate-500/10 dark:shadow-white/20 rounded-lg border-white/20 border-l-white/20 border-r-white/20 sm:shadow-sm lg:rounded-xl lg:shadow-none">
           <div className="flex flex-col p-6">
             <h3 className="text-xl font-semibold leading-6 tracking-tighter">Login</h3>
-            {/* <p className="mt-1.5 text-sm font-medium text-white/50">
-              Welcome back, enter your credentials to continue.
-            </p> */}
+        
           </div>
           <div className="p-6 pt-0">
             {isLoading ? (

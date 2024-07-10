@@ -1,30 +1,56 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
-  return (
-    <div className='mt-auto'>
-      {/* <footer class="footer footer-center  w-full p-1 bg-gray-300 text-gray-800"> */}
-      <footer class="footer footer-center  w-full py-16 bg-gray-300 text-gray-800">
-     
-        <div class="text-center">
-          <p>
-            Copyright © 2024 -
-            <a class="font-semibold" href="mailto:m.sohanemon@gmail.com"
-            >MicroWorld</a
-            >
-          </p>
-
-
-          <div class="w-full px-4 mb-2 mx-auto text-center">
-            <div class="text-sm text-gray-500 py-3">
-              Made with <a class="text-gray-800 font-semibold"  >Material Tailwind</a> by <a class="text-gray-800  font-semibold" > Creative Tim</a>.
-            </div>
-          </div>
+    return (
+        <div className='mt-auto'>
+            <footer className="footer footer-center w-full py-16 bg-gray-300 text-gray-800">
+                <div className="text-center">
+                    <p>
+                        Copyright © 2024 - 
+                        <a className="font-semibold" href="mailto:m.sohanemon@gmail.com">MicroWorld</a>
+                    </p>
+                    <div className="w-full px-4 mb-2 mx-auto text-center">
+                        <div className="text-sm text-gray-500 py-3">
+                            Made with <a className="text-gray-800 font-semibold">Material Tailwind</a> by <a className="text-gray-800 font-semibold">Creative Tim</a>.
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-      </footer>
+    );
+};
 
-    </div>
-  )
-}
+export default Footer;
 
-export default Footer
+
+
+// import React from 'react'
+
+// const Footer = () => {
+//   return (
+//     <div className='mt-auto'>
+//       {/* <footer class="footer footer-center  w-full p-1 bg-gray-300 text-gray-800"> */}
+//       <footer class="footer footer-center  w-full py-16 bg-gray-300 text-gray-800">
+     
+//         <div class="text-center">
+//           <p>
+//             Copyright © 2024 -
+//             <a class="font-semibold" href="mailto:m.sohanemon@gmail.com"
+//             >MicroWorld</a
+//             >
+//           </p>
+
+
+//           <div class="w-full px-4 mb-2 mx-auto text-center">
+//             <div class="text-sm text-gray-500 py-3">
+//               Made with <a class="text-gray-800 font-semibold"  >Material Tailwind</a> by <a class="text-gray-800  font-semibold" > Creative Tim</a>.
+//             </div>
+//           </div>
+//         </div>
+//       </footer>
+
+//     </div>
+//   )
+// }
+
+// export default Footer

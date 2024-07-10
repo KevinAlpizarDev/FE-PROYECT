@@ -7,6 +7,8 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Products from "../pages/Products";
 import Contact from "../pages/Contact";
+import Error404 from "../pages/Error404";
+
 
 const router = createBrowserRouter([
   // PAGINAS PRINCIPALES
@@ -19,7 +21,7 @@ const router = createBrowserRouter([
   { path: "/about", element: <PrivateRoutes route={<About />} /> },
   { path: "/contact", element: <PrivateRoutes route={<Contact />} /> },
 
-  { path: "/*", element: <h1>404 Not Found</h1> },
+  { path: "/*", element: <Error404/>  },
 ]);
 
 const Routes = () => {

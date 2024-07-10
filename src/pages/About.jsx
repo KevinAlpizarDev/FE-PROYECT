@@ -10,18 +10,10 @@ const About = () => {
     <>
 
       <NavBar />
-      {/* <div className="text-6xl flex  justify-center  px-4 py-11  bg-[#080808] h-screen">
-      </div> */}
-      {/* <Content/> */}
-      {/* <ContentPage/> */}
       <ContentAbout/>
-      {/* <Footer/> */}
+    
     </>
   )
 }
 
 export default About
-
-{/* About */ }
-{/* <Brand/> */ }
-{/* <Template /> */ }

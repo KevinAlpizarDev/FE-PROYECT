@@ -7,19 +7,8 @@ import Dash from "../components/Dash"
 const Contact = () => {
   return (
     <>
-
       <NavBar />
-      {/* <Content /> */}
-      {/* <ContentContact /> */}
-      <Dash/>
-      {/* <Footer /> */}
-      {/* <Brand/> */}
-      {/* <div className="h-screen">
-      </div> */}
-      {/* <div className="text-6xl">
-        Contact Us
-      </div> */}
-
+      <Dash />
     </>
 
   )
