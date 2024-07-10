@@ -36,5 +36,12 @@
       "password": "b"
     }
   ],
-  "products": []
+  "products": [
+    {
+      "id": null,
+      "nombre": "ss",
+      "dificultad": "2",
+      "descripcion": "sssss"
+    }
+  ]
 }
