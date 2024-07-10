@@ -204,7 +204,20 @@ const Signup = () => {
             </svg>
           </div>
           Ardiansyah Putra */}
-          <img src={PageLogo} alt="" />
+          {/* <img src={PageLogo} alt="" /> */}
+
+          <h1 className="text-4xl">
+             <span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-red-500 from- via-red-400 via- to-yellow-300 to-" >
+             Mic
+              </span>
+<span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-yellow-500 from- via-teal-400 via- to-teal-300 to-">
+  roW
+</span>
+<span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-teal-500 from- via-blue-400 via- to-violet-300 to-">
+orld
+</span>
+            </h1>
+
         </div>
       </a>
       <div className="relative mt-12 w-full max-w-lg sm:mt-10">
@@ -351,7 +364,7 @@ const Signup = () => {
 
       {/* ///////////////////////////////// */}
 
-      <div class="flex flex-col justify-center items-center font-[sans-serif] bg-gradient-to-r from-blue-800 to-blue-500 lg:h-screen p-6">
+      {/* <div class="flex flex-col justify-center items-center font-[sans-serif] bg-gradient-to-r from-blue-800 to-blue-500 lg:h-screen p-6">
         <div class="grid md:grid-cols-2 items-center gap-y-8 bg-white max-w-7xl w-full shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md overflow-hidden">
           <div class="max-md:order-1 flex flex-col justify-center sm:p-8 p-4 bg-gradient-to-r from-blue-600 to-blue-700 w-full h-full">
             <div class="max-w-md space-y-12 mx-auto">
@@ -379,33 +392,14 @@ const Signup = () => {
               <div>
                 <label class="text-gray-800 text-sm mb-2 block">First Name</label>
                 <input  ref={userRef} name="name" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Enter name" />
-                {/* <input
-                    ref={userRef}
-                    type="text"
-                    placeholder="user Name"
-                    className="block w-full border-0 bg-transparent p-0 text-sm my-1 placeholder:text-muted-foreground/90 focus:outline-none focus:ring-0 focus:ring-teal-500 sm:leading-7 text-foreground"
-                  /> */}
+             
               </div>
-              {/* <div>
-                <label class="text-gray-800 text-sm mb-2 block">Last Name</label>
-                <input name="lname" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Enter last name" />
-              </div> */}
-              {/* <div>
-                <label class="text-gray-800 text-sm mb-2 block">Email Id</label>
-                <input name="email" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Enter email" />
-              </div> */}
+          
                <div>
                 <label class="text-gray-800 text-sm mb-2 block">Password</label>
                 <input    ref={passRef} name="password" type="password" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Enter password" />
               </div>
-              {/* <div>
-                <label class="text-gray-800 text-sm mb-2 block">Mobile No.</label>
-                <input name="number" type="number" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Enter mobile number" />
-              </div> */}
-              {/* <div>
-                <label class="text-gray-800 text-sm mb-2 block">Password</label>
-                <input name="password" type="password" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Enter password" />
-              </div> */}
+             
               <div>
                 <label class="text-gray-800 text-sm mb-2 block">Confirm Password</label>
                 <input name="cpassword" type="password" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Enter confirm password" />
@@ -426,7 +420,7 @@ const Signup = () => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

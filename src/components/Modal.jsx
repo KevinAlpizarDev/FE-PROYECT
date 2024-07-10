@@ -3,13 +3,12 @@
 
 
 import React, { useState, useEffect } from "react";
-import { createProduct } from "../hooks/useFetch2"
+// import { createProduct } from "../hooks/useFetch.js"
+import { createProduct } from "../hooks/useFetch2.js"
 import uuid from 'react-uuid'
 // import { comparteContexto } from "../context/Context.jsx"
-// import { updateProduct } from "../hooks/useFetch.js"
-import { comparteContexto } from "../contexts/Context";
-import { updateProduct } from "../hooks/useFetch2";
-
+import { comparteContexto } from "../contexts/Context.jsx";
+import { updateProduct } from "../hooks/useFetch2.js"
 
 const Modal = ({ tareaSeleccionada, guardarTarea, closeModal }) => {
 
@@ -103,7 +102,7 @@ const Modal = ({ tareaSeleccionada, guardarTarea, closeModal }) => {
         console.log(createProduct(nuevaTarea));
         console.log(nuevaTarea);
 
-        updateProduct(id,)
+        updateProduct(id, )
         setTimeout(() => {
             setActualizador(actualizador + 1)
 

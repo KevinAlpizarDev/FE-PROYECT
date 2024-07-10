@@ -38,10 +38,34 @@
   ],
   "products": [
     {
-      "id": null,
-      "nombre": "ss",
-      "dificultad": "2",
-      "descripcion": "sssss"
+      "id": "9db6c0aa-2bdb-2e5c-9042-17629a838102",
+      "nombre1": "aa",
+      "dificultad1": "2",
+      "descripcion1": "aaa"
+    },
+    {
+      "id": "2cd32e01-af0e-85c2-c0c8-0ad96d09be30",
+      "nombre1": "aaaa",
+      "dificultad1": "1",
+      "descripcion1": "aaa"
+    },
+    {
+      "id": "7b63e0bd-e4c5-bcde-4ffe-e3eb3a0780c0",
+      "nombre1": "aaaaaaaaa",
+      "dificultad1": "2",
+      "descripcion1": "aaaaaaa"
+    },
+    {
+      "id": "3e223e54-3c7b-e3eb-ff33-e2409edba0ff",
+      "nombre1": "a",
+      "dificultad1": "2",
+      "descripcion1": "cc"
+    },
+    {
+      "id": "bc35cf47-b9b9-6ed5-da9b-2569145e5ffe",
+      "nombre1": "ajj",
+      "dificultad1": "1",
+      "descripcion1": "cc"
     }
   ]
 }

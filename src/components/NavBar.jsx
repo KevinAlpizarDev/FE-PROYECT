@@ -70,8 +70,18 @@ const NavBar = () => {
       <div className="flex items-center">
         <a href="#" className="cursor-pointer">
           <h3 className="text-2xl font-medium text-blue-500">
-         
-            <img src={PageLogo} alt="" />
+          <h1 className="text-4xl">
+             <span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-red-500 from- via-red-400 via- to-yellow-300 to-" >
+             Mic
+              </span>
+<span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-yellow-500 from- via-teal-400 via- to-teal-300 to-">
+  roW
+</span>
+<span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-teal-500 from- via-blue-400 via- to-violet-300 to-">
+orld
+</span>
+            </h1>
+            {/* <img src={PageLogo} alt="" /> */}
           </h3>
         </a>
       </div>

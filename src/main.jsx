@@ -8,6 +8,8 @@ import "./index.css";
 // import NavBar from "./components/NavBar.jsx";
 // import Footer from "./components/Footer.jsx";
 import FooterPage from "./components/FooterPage.jsx";
+// import { Context } from "../src/context/Context.jsx"
+import { Context } from "../src/contexts/Context.jsx"
 // import Header from "./components/Header.jsx";
 // import Dash from "./components/Dash.jsx";
 // import Dash from "./components/Dash.jsx";
@@ -16,7 +18,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <NavBar/> */}
     {/* <Forma/> */}
-    <App />
+    {/* <App /> */}
+    <Context>
+      <App />
+    </Context>
     {/* <Footer /> */}
     {/* <Footer/> */}
     {/* <Header /> */}

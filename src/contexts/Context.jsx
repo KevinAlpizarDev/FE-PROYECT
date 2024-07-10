@@ -37,4 +37,6 @@ export const Context = ({ children }) => {
     )
 }
 
+
 export const comparteContexto = () => useContext(Contexto)
+
