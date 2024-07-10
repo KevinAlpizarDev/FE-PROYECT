@@ -6,7 +6,7 @@ const FooterPage = () => {
 
 
 
-      <footer class=" bg-neutral-100 text-center bg-white/10 text-neutral-600  dark:text-neutral-200">
+      <footer class=" bg-neutral-100 text-center bg-white/10 text-neutral-600  dark:text-neutral-200 dark:bg-black">
 
 
         <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">

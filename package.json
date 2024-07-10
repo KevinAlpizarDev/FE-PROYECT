@@ -23,6 +23,7 @@
     "react-id-generator": "^3.0.2",
     "react-router": "^6.24.0",
     "react-router-dom": "^6.24.0",
+    "react-uuid": "^2.0.0",
     "uuid": "^10.0.0",
     "uuidv4": "^6.2.13"
   },

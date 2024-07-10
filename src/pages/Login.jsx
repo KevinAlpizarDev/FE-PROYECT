@@ -167,7 +167,18 @@ const Login = () => {
               />
             </svg> */}
             {/* <img src={LogoPage} alt="" /> */}
-            <img src={pageLogo} alt="" />
+            {/* <img src={pageLogo} alt="" /> */}
+            <h1 className="text-4xl">
+             <span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-red-500 from- via-red-400 via- to-yellow-300 to-" >
+             Mic
+              </span>
+<span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-yellow-500 from- via-teal-400 via- to-teal-300 to-">
+  roW
+</span>
+<span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-teal-500 from- via-blue-400 via- to-violet-300 to-">
+orld
+</span>
+            </h1>
           </div>
 
         </div>
@@ -276,6 +287,8 @@ const Login = () => {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 };
