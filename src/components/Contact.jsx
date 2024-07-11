@@ -53,10 +53,12 @@ const Contact = () => {
       
         {/* <button class="mx-auto bg-blue-700 text-white px-6 py-2 rounded-xl shadow border font-medium mt-4 text-xl hover:brightness-90"> Get Early Access </button> */}
         {/* <input type="email" name="user_email" /> */}
-      
-        <textarea  class="w-72 bg-slate-300 h-14 rounded-xl block flex-1 bg-transparent py-4 pl-4 text-gray-900 placeholder:text-gray-400 focus:none sm:text-md sm:leading-6 text-lg" name="message" placeholder="Message to MicroWorld" />
-        <input type="email" name="user_email"  id="email" autocomplete="email" value="" class="w-72 h-14 rounded-xl block flex-1 bg-transparent py-4 pl-4 text-gray-900 placeholder:text-gray-400 focus:none sm:text-md sm:leading-6 text-lg" placeholder="Enter your e-mail"></input>
-        <input  class="mx-auto bg-blue-700 text-white px-6 py-2 rounded-xl shadow border font-medium mt-4 text-xl hover:brightness-90" type="submit" value="Message" />
+      <div className="mx-6">
+
+        <textarea  class="bg-pink-100 text-white w-72 c h-14 rounded-xl block flex-1 bg-transparent py-4 pl-4  placeholder:text-gray-400 focus:none sm:text-md sm:leading-6 text-lg" name="message" placeholder="Message to MicroWorld" />
+      </div>
+        <input type="email" name="user_email"  id="email" autocomplete="email" value="" class="border w-72 h-14 rounded-xl block flex-1 bg-transparent py-4 pl-4 text-gray-900 placeholder:text-gray-400 focus:none sm:text-md sm:leading-6 text-lg" placeholder="Enter your e-mail"></input>
+        <input  class="bg mx-auto bg-blue-700 text-white px-6 py-2 rounded-xl shadow border font-medium mt-4 text-xl hover:brightness-90" type="submit" value="Message" />
       </div>
     </div>
   </div>
