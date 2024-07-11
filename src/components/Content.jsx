@@ -18,9 +18,7 @@ const Content = () => {
         <div class="md:w-1/2">
             <div class="wrap-video">
                 <video class="object-cover h-96 w-full bg-black" loop="" >
-                    {/* <source 
-                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/648b6bdb802c1efb403e5be5_ZOOM2-transcode.mp4"
-                        type="video/mp4"> */}
+                 
                 </video>
             </div>
             <span class="pt-4 grid grid-cols-6 gap-4">
@@ -40,9 +38,7 @@ const Content = () => {
         <div class="md:w-1/2">
             <div class="wrap-video">
                 <video class="object-cover h-96 w-full bg-black" loop="" >
-                    {/* <source 
-                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/640fe762f883d05b8f683c6d_HOKABODEGA-transcode.mp4"
-                        type="video/mp4"> */}
+                 
                 </video>
             </div>
             <span class="pt-4 grid grid-cols-6 gap-4">
@@ -124,19 +120,3 @@ export default Content
 
 
 
-
-
-
-
-
-{/* <script>
-var video = $('.wrap-video').hover(hoverVideo, hideVideo);
-
-function hoverVideo(e) {  
-$('video', this).get(0).play(); 
-}
-
-function hideVideo(e) {
-$('video', this).get(0).pause(); 
-}
-</script> */}

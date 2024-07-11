@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   { path: "/about", element: <PrivateRoutes route={<About />} /> },
   { path: "/contact", element: <PrivateRoutes route={<Contact />} /> },
 
-  { path: "/*", element: <Error404/>  },
+  { path: "/*", element: <Error404 /> },
 ]);
 
 const Routes = () => {

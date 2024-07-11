@@ -1,8 +1,117 @@
+// import { useRef, useState } from "react";
+// import Form from "../components/Form";
+// import Input from "../components/Input";
+// import { validateEmpty, validateSpaces } from "../utils/validations";
+// import { useFetchGet, useFetchPost } from "../hooks/useFetch";
+// import { Link, useNavigate } from "react-router-dom";
+
+// const Signup = () => {
+//   const url = "http://localhost:3001/users";
+//   // refs
+//   const userRef = useRef();
+//   const passRef = useRef();
+//   const confirmRef = useRef();
+//   // states
+//   const [msg, setMsg] = useState("");
+//   const navigate = useNavigate();
+//   // hooks
+//   const { get, isLoading: getIsLoading, error: getError } = useFetchGet();
+//   const { post, isLoading: postIsLoading, error: postError } = useFetchPost();
+
+//   const signup = async (e) => {
+//     e.preventDefault();
+
+//     let userInput = userRef.current.value;
+//     let passInput = passRef.current.value;
+//     let confirmInput = confirmRef.current.value;
+
+//     // validations
+//     if (validateEmpty(userInput, passInput)) {
+//       if (validateSpaces(userInput, passInput)) {
+//         if (passInput === confirmInput) {
+//           // clear inputs
+//           userRef.current.value = "";
+//           passRef.current.value = "";
+//           confirmRef.current.value = "";
+
+//           const data = await get(url);
+
+//           if (data) {
+//             // check if the username already exists
+//             const exists = data.find((user) => user.username === userInput);
+//             if (!exists) {
+//               // create new user
+//               const newUser = { username: userInput, password: passInput };
+//               const response = await post(url, newUser);
+//               if (response) {
+//                 setMsg("Usuario creado con éxito, redirigiendo al login...");
+//                 // redirect to login after 1 second
+//                 setTimeout(() => {
+//                   navigate("/login");
+//                 }, 1000);
+//               } else {
+//                 setMsg(postError);
+//               }
+//             } else {
+//               setMsg(
+//                 <>
+//                   El usuario ya existe, <Link to={"/login"}>inicie sesión</Link>
+//                 </>
+//               );
+//             }
+//           } else {
+//             setMsg(getError);
+//           }
+//         } else {
+//           setMsg("Contraseñas no coinciden");
+//         }
+//       } else {
+//         setMsg("Por favor no ingrese espacios vacíos");
+//       }
+//     } else {
+//       setMsg("Por favor llene los campos");
+//     }
+//   };
+
+//   return (
+//     <>
+//       {getIsLoading || postIsLoading ? (
+//         <p>Cargando...</p>
+//       ) : (
+//         <>
+//           <Form handleSubmit={signup}>
+//             <Input ref={userRef} type="text" placeholder="User" />
+//             <Input ref={passRef} type="password" placeholder="Password" />
+//             <Input ref={confirmRef} type="password" placeholder="Password" />
+//             <Input type={"submit"} value={"Registrarse"} />
+//           </Form>
+//           <Link to={"/login"}>Iniciar Sesión</Link>
+//           <p>{msg}</p>
+//         </>
+//       )}
+//     </>
+//   );
+// };
+
+// export default Signup;
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////
+
 import React, { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFetchGet, useFetchPost } from "../hooks/useFetch"; // Asumiendo que tienes un hook personalizado para manejar fetches
 import { validateEmpty, validateSpaces } from "../utils/validations"; // Asumiendo que tienes funciones de validación personalizadas
-import PageLogo from "../assets/micromicro.png";
 
 const Signup = () => {
   const url = "http://localhost:3001/users"; // URL del backend para registrar usuarios
@@ -79,17 +188,23 @@ const Signup = () => {
     <div className="bg-black text-white min-h-screen flex flex-col items-center pt-16 sm:justify-center sm:pt-0">
       <a href="#">
         <div className="text-foreground font-semibold text-2xl tracking-tighter mx-auto flex items-center gap-2">
-          <h1 className="text-4xl">
-            <span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-red-500 via-red-400 to-yellow-300">
-              Mic
-            </span>
-            <span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-yellow-500 via-teal-400 to-teal-300">
-              roW
-            </span>
-            <span className="bg-gradient-to-tr bg-clip-text text-transparent font-bold from-teal-500 via-blue-400 to-violet-300">
-              orld
-            </span>
-          </h1>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5"
+              />
+            </svg>
+          </div>
+          Ardiansyah Putra
         </div>
       </a>
       <div className="relative mt-12 w-full max-w-lg sm:mt-10">
@@ -114,7 +229,7 @@ const Signup = () => {
                     ref={userRef}
                     type="text"
                     placeholder="Username"
-                    className="block w-full border-0 bg-transparent p-0 text-sm my-1 placeholder:text-muted-foreground/90 focus:outline-none focus:ring-0 focus:ring-teal-500 sm:leading-7 text-foreground"
+                    className="block w-full border-0 bg-transparent p-0 text-sm my-1 rounded-full border-0 bg-accent px-4 py-2 font-medium placeholder:text-muted-foreground/90 focus:outline-none focus:ring-0 sm:leading-7 text-foreground"
                   />
                 </div>
               </div>
@@ -148,21 +263,15 @@ const Signup = () => {
                   />
                 </div>
               </div>
+              <div className="mt-4 flex items-center justify-end gap-x-2">
+                <button
+                  type="submit"
+                  className="font-semibold hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300 inline-flex items-center justify-center rounded-md text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black h-10 px-4 py-2"
+                >
+                  Register
+                </button>
+              </div>
             </form>
-            <div className="mt-4 flex items-center justify-end gap-x-2">
-              <button
-                type="submit"
-                className="font-semibold hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300 inline-flex items-center justify-center rounded-md text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black h-10 px-4 py-2"
-              >
-                Register
-              </button>
-              <Link
-                to="/"
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:ring hover:ring-white h-10 px-4 py-2 duration-200"
-              >
-                Login
-              </Link>
-            </div>
           </div>
           <div className="flex items-center justify-center mt-4">
             <p className="text-sm font-medium text-foreground">
@@ -180,13 +289,3 @@ const Signup = () => {
 };
 
 export default Signup;
-
-
-
-
-
-
-
-
-
-
