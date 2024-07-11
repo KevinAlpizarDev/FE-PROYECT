@@ -44,7 +44,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className={`flex justify-around py-2 bg-white text  shadow-md sticky top-0  z-10 dark:bg-black bg-opacity-90 dark:bg-opacity-90`}>
+    <nav className={`flex justify-around py-1 bg-white text  shadow-md sticky top-0  z-10 dark:bg-black bg-opacity-90 dark:bg-opacity-90`}>
       <div className="flex items-center">
         <a href="#" className="cursor-pointer">
           <h3 className="text-2xl font-medium text-blue-500">

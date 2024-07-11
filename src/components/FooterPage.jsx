@@ -3,9 +3,9 @@ import React from 'react';
 const FooterPage = () => {
   return (
     <div className='mt-auto'>
-      <footer className="bg-neutral-100 text-center bg-white/10 text-neutral-600 dark:text-neutral-200 dark:bg-black">
+      <footer className="bg-neutral-100 text-center border-t-2 border-neutral-200 bg-white/10 text-neutral-600 dark:text-neutral-200 dark:bg-black">
         <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
-          <div className="mr-12 hidden md:block">
+          <div className="mr-12 hidden md:block  ">
             <span>Get connected with us:</span>
           </div>
           <div className="flex justify-center items-center">
@@ -39,7 +39,7 @@ const FooterPage = () => {
         <div className="mx-6 pt-8 pb-4 text-center">
           <div className="mb-6">
             <h5 className="mb-2 font-bold uppercase">Explore Our microWorld</h5>
-            <p className="mb-4">Explore the world of technology with microWorld and discover innovation!</p>
+            <p className="mb-4">Explore the world of technology with microWorld</p>
           </div>
           <div className="relative mb-7"></div>
         </div>

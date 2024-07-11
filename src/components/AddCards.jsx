@@ -54,10 +54,10 @@ const AddCards = () => {
         <>
             <div>
                 <section className="items-center justify-end w-full dark:bg-black">
-                    <div className="relative inline-flex group my-6 mx-5">
+                    <div className="relative inline-flex group my-4 mx-5">
                         <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
                         </div>
-                        <button className="relative inline-flex items-center justify-center px-8 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" onClick={abrirModal}>
+                        <button className="relative inline-flex items-center justify-center px-8 py-1 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" onClick={abrirModal}>
                             Add
                         </button>
                     </div>

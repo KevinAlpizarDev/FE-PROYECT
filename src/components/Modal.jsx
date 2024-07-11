@@ -100,14 +100,14 @@ const Modal = ({ tareaSeleccionada, guardarTarea, closeModal }) => {
                                     <option value="4">Intel Core i7</option>
                                 </select>
 
-                                <label class="block mb-2 text-lg font-bold text-gray-800">Name:</label>
+                                <label class="block mb-2 text-lg font-bold text-gray-800">Price:</label>
                                 <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-sky-200"
                                     type="text"
                                     value={nombre1}
                                     onChange={(e) => setNombre1(e.target.value)}
                                 />
 
-                                <label class="block mb-2 text-lg font-bold text-w">Descripción:</label>
+                                <label class="block mb-2 text-lg font-bold text-w">Description:</label>
                                 <textarea
                                     type="text"
                                     value={descripcion1}
@@ -116,7 +116,7 @@ const Modal = ({ tareaSeleccionada, guardarTarea, closeModal }) => {
 
                                 <div className="m-8 my-20 max-w-[400px] mx-auto">
                                     <div class="space-y-4">
-                                        <button class="p-3 bg-black hover:bg-slate-900 rounded-full text-white w-full font-semibold" type="submit">{modalEdit ? 'Editar Producto' : 'Agregar Producto'}</button>
+                                        <button class="p-3 bg-black hover:bg-slate-900 rounded-full text-white w-full font-semibold" type="submit">{modalEdit ? 'Edit Product' : 'Add product'}</button>
                                     </div>
                                 </div>
                             </form>
