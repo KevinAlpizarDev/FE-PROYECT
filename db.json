@@ -56,48 +56,5 @@
       "password": "q"
     }
   ],
-  "products": [
-    {
-      "id": "4bac2058-6ffd-1ee3-2fc7-60cd5a396151",
-      "nombre1": "A",
-      "dificultad1": "3",
-      "descripcion1": "AA"
-    },
-    {
-      "id": "1fd42ae9-428a-51ea-3939-381631c5a749",
-      "nombre1": "AZZ",
-      "dificultad1": "1",
-      "descripcion1": "AAZ"
-    },
-    {
-      "id": "857acb6c-8160-f7e8-783c-288054674dac",
-      "nombre1": "AZZA",
-      "dificultad1": "4",
-      "descripcion1": "AAZA"
-    },
-    {
-      "id": "e7540f85-f655-c692-47ba-e124a0abe690",
-      "nombre1": "aa",
-      "dificultad1": "1",
-      "descripcion1": "a"
-    },
-    {
-      "id": "dd12a1db-64a4-84c3-adeb-23db54d5fac3",
-      "nombre1": "aa",
-      "dificultad1": "1",
-      "descripcion1": "a"
-    },
-    {
-      "id": "082c957f-3613-62ce-734d-b6f94af52dfc",
-      "nombre1": "aa",
-      "dificultad1": "1",
-      "descripcion1": "a"
-    },
-    {
-      "id": "eddeb888-5d97-164d-fac0-16012fa0c83e",
-      "nombre1": "aa",
-      "dificultad1": "1",
-      "descripcion1": "a"
-    }
-  ]
+  "products": []
 }

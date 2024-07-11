@@ -8,7 +8,7 @@ const Dash = () => {
                     <h1 className="text-4xl font-bold mt-16">Welcome to microWorld</h1>
                 </header>
                 <section className="text-center py-12 px-4 bg-white dark:bg-[#080808] text-[#444444] dark:text-[#d4d4d4]">
-                    <h2 className="text-2xl font-bold">Store specializing in technology products from recognized brands such as Tesla, Nvidia, Intel, and IBM. We are here to help you with any questions you may have.</h2>
+                    <h2 className="text-2xl font-bold">Store specialized in technological products from recognized brands such as Tesla, Nvidia, Intel and IBM. located in Puntarenas and Santa Ana.</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mt-8 animate-fadeIn">
                         <div className="p-4 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition-colors">
                             <h3 className="text-xl font-bold">Phone Number</h3>
