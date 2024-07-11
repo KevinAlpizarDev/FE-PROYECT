@@ -58,10 +58,22 @@
   ],
   "products": [
     {
-      "id": "5fd87319-7b7d-4ac0-c45d-c2f8b20dea6c",
-      "nombre1": "a",
+      "id": "4bac2058-6ffd-1ee3-2fc7-60cd5a396151",
+      "nombre1": "A",
+      "dificultad1": "3",
+      "descripcion1": "AA"
+    },
+    {
+      "id": "1fd42ae9-428a-51ea-3939-381631c5a749",
+      "nombre1": "AZZ",
       "dificultad1": "1",
-      "descripcion1": "a"
+      "descripcion1": "AAZ"
+    },
+    {
+      "id": "857acb6c-8160-f7e8-783c-288054674dac",
+      "nombre1": "AZZA",
+      "dificultad1": "4",
+      "descripcion1": "AAZA"
     }
   ]
 }
