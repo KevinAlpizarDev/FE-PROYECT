@@ -61,5 +61,12 @@
       "password": "U"
     }
   ],
-  "products": []
+  "products": [
+    {
+      "id": "3c9d39c7-aeed-5842-74f6-8c1cc58e6071",
+      "nombre1": "4444444444",
+      "dificultad1": "1",
+      "descripcion1": "dd"
+    }
+  ]
 }

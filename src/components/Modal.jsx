@@ -102,17 +102,17 @@ const Modal = ({ tareaSeleccionada, guardarTarea, closeModal }) => {
 
                                 <label class="block mb-2 text-lg font-bold text-gray-800">Price:</label>
                                 <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-sky-200"
-                                    type="text"
+                                    type="number"
                                     value={nombre1}
                                     onChange={(e) => setNombre1(e.target.value)}
                                 />
 
-                                <label class="block mb-2 text-lg font-bold text-w">Description:</label>
+                                <label class="block mb-2 text-lg font-bold text-w">Nombre</label>
                                 <textarea
-                                    type="text"
+                                    type="number"
                                     value={descripcion1}
                                     onChange={(e) => setDescripcion1(e.target.value)}
-                                    id="message" rows="4" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-5000 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
+                                    id="message" rows="4" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-5000 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="       ..."></textarea>
 
                                 <div className="m-8 my-20 max-w-[400px] mx-auto">
                                     <div class="space-y-4">

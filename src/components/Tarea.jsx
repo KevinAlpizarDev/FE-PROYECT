@@ -42,7 +42,7 @@ const Tarea = ({ tarea, onEliminarTarea, onEditarTarea, dificultad, nombre, desc
         <div className="flex flex-col items-center justify-center relative">
           <div id="partnerCard" className="bg-[#1c1c1c] mb-16 text-gray-50 overflow-hidden rounded-md max-w-sm p- min-h-[400px] flex flex-col">
             <div>
-              <h3 className="font-bold text-gray-700 text-[22px] leading-7 mb-1">{nombre}</h3>
+              <p className="text-[17px] font-bold text-[#0FB478]">{descripcion}</p>
             </div>
             <div className="flex items-center justify-center bg-[#2a2a2a] min-h-[200px]">
              
@@ -55,7 +55,7 @@ const Tarea = ({ tarea, onEliminarTarea, onEditarTarea, dificultad, nombre, desc
             </div>
             <div className="p-4 pr-0 text-lg col-span-3">
               <h4 className="font-bold">Price:</h4>
-              <p className="text-[17px] font-bold text-[#0FB478]">{descripcion}</p>
+              <h3 className="font-bold text-gray-700 text-[22px] leading-7 mb-1">{nombre}</h3>
             </div>
             <div>
               <div className="p-1">

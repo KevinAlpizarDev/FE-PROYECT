@@ -7,7 +7,7 @@ import Brand from '../Brand';
 const ContentAbout = () => {
   return (
     <div>
-      <div class="min-h-28 bg-white dark:bg-[#080808] ">
+      <div  class="min-h-28 bg-white dark:bg-[#080808] ">
         <div class="mx-6 py-10 ">
           <h1 className='font-extrabold text-6xl text-[#444444] dark:text-[#d4d4d4]'>
             Empowering Innovation: Leaders in Technology and AI Integration

@@ -6,7 +6,7 @@ import { AuthContext } from "../contexts/AuthProvider";
 import { validateEmpty } from "../utils/validations";
 import Form from "../components/Form";
 import Input from "../components/Input";
-import "../styles/login.css";
+
 
 
 import pageLogo from "../assets/micromicro.png"
