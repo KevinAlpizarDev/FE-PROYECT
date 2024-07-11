@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useState } from "react";
 
@@ -28,13 +29,10 @@ const Tarea = ({ tarea, onEliminarTarea, onEditarTarea, dificultad, nombre, desc
 
   const handleEditar = () => {
     setModalEdit(true);
-    console.log(datosLectura[0].id);
-    console.log(id);
     let Producto = datosLectura.find(productos => productos.id == id);
     setNombre1(Producto.nombre1);
     setDificultad1(Producto.dificultad1);
     setDescripcion1(Producto.descripcion1);
-    console.log(Producto);
     onEditarTarea(tarea);
   };
 
@@ -42,23 +40,18 @@ const Tarea = ({ tarea, onEliminarTarea, onEditarTarea, dificultad, nombre, desc
     <div>
       <div className="flex items-center justify-center bg-gradient-to-br px-2">
         <div className="flex flex-col items-center justify-center relative">
-          <div id="partnerCard" className="bg-[#1c1c1c] mb-16 text-gray-50 overflow-hidden rounded-md max-w-sm p-2 min-h-[400px] flex flex-col">
+          <div id="partnerCard" className="bg-[#1c1c1c] mb-16 text-gray-50 overflow-hidden rounded-md max-w-sm p- min-h-[400px] flex flex-col">
             <div>
               <h3 className="font-bold text-gray-700 text-[22px] leading-7 mb-1">{nombre}</h3>
             </div>
             <div className="flex items-center justify-center bg-[#2a2a2a] min-h-[200px]">
-              <a
-                className="flex items-center justify-center"
-                href="#"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
+             
                 <img
-                  className="h-[236px] bg-black w-full py-1"
+                  className="h-[236px] w-full object-cover min-w-[200px] max-w-full"
                   src={diccionarioIconos[dificultad]}
                   alt={`nivel ${dificultad}`}
                 />
-              </a>
+             
             </div>
             <div className="p-4 pr-0 text-lg col-span-3">
               <h4 className="font-bold">Price:</h4>
@@ -82,15 +75,6 @@ const Tarea = ({ tarea, onEliminarTarea, onEditarTarea, dificultad, nombre, desc
 };
 
 export default Tarea;
-
-
-
-
-
-
-
-
-
 
 
 

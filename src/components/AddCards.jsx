@@ -1,6 +1,11 @@
+
 import { useEffect, useState } from "react";
+// import Modal from "./components/Modal";
+// import ListadoTareas from "./components/ListadoTareas";
+// import Tarea from "./components/Tarea";
+
 import Modal from "./Modal";
-import ListadoTareas from "./ListadoTareas";
+import ListadoTareas from "./ListadoTareas"
 import Tarea from "./Tarea";
 
 const AddCards = () => {
@@ -41,6 +46,7 @@ const AddCards = () => {
 
     // Función para abrir el modal con la tarea seleccionada para editar
     const abrirModalEditar = (tarea) => {
+
         setTareaSeleccionada(tarea);
         setModalAbierto(true);
     };
@@ -50,19 +56,37 @@ const AddCards = () => {
         setTareaSeleccionada(null); // Limpiar tarea seleccionada
     };
 
+
+
     return (
         <>
-            <div>
-                <section className="items-center justify-end w-full dark:bg-black">
-                    <div className="relative inline-flex group my-4 mx-5">
-                        <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-                        </div>
-                        <button className="relative inline-flex items-center justify-center px-8 py-1 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" onClick={abrirModal}>
-                            Add
-                        </button>
-                    </div>
 
-                    <div className="h-screen flex justify-center items-center dark:bg-black overflow-y-scroll">
+        
+
+
+
+
+
+            <div>
+
+                <section class="items-center justify-end    w-full dark:bg-black">
+                 
+                    <div class="relative inline-flex  group my-2 mx-5">
+        <div
+            class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
+    
+        <button className="relative inline-flex items-center justify-center px-8 py-1 text-lg  text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"  onClick={abrirModal}>
+            Add
+        </button>
+
+    </div>
+
+      
+
+                    <div className='h-screen flex   justify-center items-center dark:bg-black  overflow-y-scroll'>
+
+
                         <ListadoTareas
                             tareas={tareas}
                             eliminarTarea={eliminarTarea}
@@ -75,13 +99,26 @@ const AddCards = () => {
                                 closeModal={closeModal}
                             />
                         )}
+
+
+
                     </div>
+
+
+
+
+
                 </section>
+
             </div>
+
+
+
+
+
+
         </>
     );
 };
 
 export default AddCards;
-
-

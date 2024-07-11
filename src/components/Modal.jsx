@@ -76,12 +76,12 @@ const Modal = ({ tareaSeleccionada, guardarTarea, closeModal }) => {
     };
 
     return (
-        <div className="modal">
-            <div className="modal-content">
+        <div className=" py-6">
+            <div className="py-40">
                 <span className="close-modal" onClick={closeModal}>&times;</span>
 
-                <div class="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50 py-10">
-                    <div class="max-h-full w-full max-w-xl overflow-y-auto sm:rounded-2xl bg-white p-6">
+                <div class="fixed left-0 top-0 flex h-full w-full items-center py- justify-center bg-black bg-opacity-50 py-10">
+                    <div class="max-h-full py-10 w-full max-w-xl overflow-y-auto sm:rounded-2xl bg-white my-8 p-6">
                         <div class="w-full">
                             <form class="w-full px-5" onSubmit={modalEdit ? console.log(2) : handleSubmit}>
                                 <button class="p-3 bg-sky-500  hover:bg-sky-600 rounded-full text-white w-full font-semibold" onClick={closeModal}>Close</button>

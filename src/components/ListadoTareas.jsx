@@ -23,7 +23,7 @@ const ListaTareas = ({ tareas, eliminarTarea, editarTarea }) => {
   console.log(productos);
 
   return (
-    <div className="w-full pt-60 grid grid-cols-3 gap-4">
+    <div className="w-full  grid grid-cols-3 gap-3">
       {productos.length > 0 ? (
         productos.map((tarea) => (
           <Tarea
@@ -37,8 +37,7 @@ const ListaTareas = ({ tareas, eliminarTarea, editarTarea }) => {
           />
         ))
       ) : (
-        <p className="text-gray-500 text-center">
-There are no products available.</p>
+        <p className="text-gray-500 text-center">No hay tareas disponibles.</p>
       )}
     </div>
   );
