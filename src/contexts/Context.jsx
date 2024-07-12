@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { useState, createContext, useContext } from 'react'
 export const Contexto = createContext()
@@ -23,11 +24,11 @@ export const Context = ({ children }) => {
             setDatosLectura,
             nombre1,
             setNombre1,
-             dificultad1, 
+             dificultad1,
              setDificultad1,
-              descripcion1, 
+              descripcion1,
               setDescripcion1,
-               modalEdit, 
+               modalEdit,
                setModalEdit
         }}>
             {children}
